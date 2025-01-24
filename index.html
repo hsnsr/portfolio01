@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カフェの名前 | ホーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>カフェの名前</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">私たちについて</a></li>
+                <li><a href="#menu">メニュー</a></li>
+                <li><a href="#location">アクセス</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>心地よい空間で最高のひとときを</h2>
+            <p>厳選されたコーヒーと手作りスイーツをお楽しみください。</p>
+            <a href="#menu" class="btn">メニューを見る</a>
+        </section>
+
+        <section id="about">
+            <h2>私たちについて</h2>
+            <p>当カフェは、地域の皆様に愛される心温まる空間を提供しています。おいしい飲み物と料理で、特別な時間をお過ごしください。</p>
+        </section>
+
+        <section id="menu">
+            <h2>メニュー</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>コーヒー</h3>
+                    <p>香り高いスペシャルティコーヒー</p>
+                </div>
+                <div class="menu-item">
+                    <h3>スイーツ</h3>
+                    <p>季節の素材を使った手作りスイーツ</p>
+                </div>
+                <div class="menu-item">
+                    <h3>ランチ</h3>
+                    <p>ヘルシーでおいしいランチメニュー</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>アクセス</h2>
+            <p>〒123-4567 東京都渋谷区カフェストリート123</p>
+            <p>最寄駅: 渋谷駅より徒歩5分</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094146!2d144.9537353156231!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z44CSMTIzLTQ1Njcg44GO44GE44Gu44Gq44KJ!5e0!3m2!1sja!2sjp!4v1618500242260!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <form action="/submit" method="post">
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 カフェの名前. All rights reserved.</p>
+    </footer>
+</body>
+</html>
